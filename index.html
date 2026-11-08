@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shiffa Dubai — Private 24K Gold Video Ad Preview & Scale Partner Proposal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F6F1E7;
+      --surface: #FFFDF8;
+      --ink: #14201B;
+      --muted: #526059;
+      --brass: #7A5A1E;
+      --brass-light: #D9B76F;
+      --border: rgba(20, 32, 27, 0.12);
+    }
+    [data-theme="dark"] {
+      --bg: #09100D;
+      --surface: #121D18;
+      --ink: #F2EDE0;
+      --muted: #A9B8B0;
+      --brass: #D9B76F;
+      --brass-light: #7A5A1E;
+      --border: rgba(242, 237, 224, 0.14);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+    header {
+      position: sticky; top: 0; z-index: 50;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 20px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .brand { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; letter-spacing: 0.03em; color: var(--brass); }
+    .header-actions { display: flex; align-items: center; gap: 12px; }
+    .wa-icon-btn {
+      width: 42px; height: 42px; border-radius: 50%;
+      background: #25D366; color: #fff;
+      display: inline-flex; align-items: center; justify-content: center;
+      text-decoration: none; box-shadow: 0 4px 12px rgba(37,211,102,0.3);
+    }
+    .menu-btn {
+      width: 42px; height: 42px; border-radius: 12px;
+      border: 1px solid var(--border); background: var(--bg);
+      color: var(--ink); font-size: 1.25rem; cursor: pointer;
+    }
+    .drawer {
+      position: fixed; top: 0; right: -320px; width: 300px; height: 100vh;
+      background: var(--surface); border-left: 1px solid var(--border);
+      z-index: 100; padding: 24px; transition: right 0.3s ease;
+      display: flex; flex-direction: column; gap: 16px;
+    }
+    .drawer.open { right: 0; }
+    .hero { max-width: 1120px; margin: 0 auto; padding: 40px 20px 24px; text-align: center; }
+    .badge {
+      display: inline-block; padding: 6px 16px; border-radius: 999px;
+      background: rgba(122,90,30,0.12); color: var(--brass);
+      font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    h1 { font-family: 'Fraunces', serif; font-size: clamp(1.85rem, 4vw, 3rem); line-height: 1.18; margin-bottom: 12px; }
+    .sub { max-width: 680px; margin: 0 auto 28px; color: var(--muted); font-size: 1rem; }
+    .bento-grid {
+      max-width: 1120px; margin: 0 auto; padding: 12px 20px 48px;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 24px;
+    }
+    .card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 24px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+      display: flex; flex-direction: column; gap: 14px;
+    }
+    .video-frame {
+      width: 100%; aspect-ratio: 9/16; border-radius: 18px;
+      overflow: hidden; background: #000; position: relative;
+    }
+    video { width: 100%; height: 100%; object-fit: cover; }
+    .card-title { font-family: 'Fraunces', serif; font-size: 1.25rem; }
+    .price-tag { font-weight: 700; color: var(--brass); font-size: 1.05rem; }
+    details {
+      border-top: 1px solid var(--border); padding-top: 10px;
+      font-size: 0.9rem; color: var(--muted);
+    }
+    summary { cursor: pointer; font-weight: 600; color: var(--ink); }
+    .cta-btn {
+      display: inline-block; text-align: center; padding: 13px 22px;
+      border-radius: 999px; background: var(--brass); color: #fff;
+      font-weight: 600; text-decoration: none; border: none; cursor: pointer;
+    }
+    .offer-box {
+      max-width: 880px; margin: 0 auto 56px; padding: 32px 24px;
+      background: var(--surface); border: 1px solid var(--border); border-radius: 24px;
+      text-align: center;
+    }
+    footer {
+      text-align: center; padding: 28px 20px; border-top: 1px solid var(--border);
+      font-size: 0.85rem; color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">SHIFFA DUBAI × AI AD STUDIO</div>
+    <div class="header-actions">
+      <a class="wa-icon-btn" href="https://wa.me/971508379080" target="_blank" aria-label="WhatsApp">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+      </a>
+      <button class="menu-btn" onclick="document.getElementById('drawer').classList.toggle('open')">☰</button>
+    </div>
+  </header>
+
+  <nav class="drawer" id="drawer">
+    <button class="menu-btn" onclick="document.getElementById('drawer').classList.remove('open')">✕</button>
+    <a href="#previews" style="color:var(--ink);text-decoration:none;font-weight:600;">1. Custom Video Previews</a>
+    <a href="#offer" style="color:var(--ink);text-decoration:none;font-weight:600;">2. 10-Ad Pack & Scale Partner</a>
+    <button class="cta-btn" onclick="document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'">Toggle Luxury Theme</button>
+  </nav>
+
+  <section class="hero">
+    <span class="badge">Complimentary Creative Production for Shiffa Dubai</span>
+    <h1>Sensory ASMR & Studio Commercials for Shiffa’s 24K Liquid Gold Elixir</h1>
+    <p class="sub">Prepared exclusively for Dr. Lamees Hamdan & the Shiffa Dubai team. Both 9:16 commercials below are yours to download and deploy across Instagram Reels, TikTok, and Meta Ads free of charge.</p>
+  </section>
+
+  <section class="bento-grid" id="previews">
+    <article class="card">
+      <div class="video-frame">
+        <video controls playsinline preload="metadata" poster="Producto_Serum_Oro_Lock.jpg" src="01_Shiffa_Dubai_24K_Gold_Product_Commercial_ASMR.mp4"></video>
+      </div>
+      <h2 class="card-title">1. Pure Studio Macro Commercial (ASMR)</h2>
+      <div class="price-tag">Complimentary Gift #1 (Included Free)</div>
+      <details>
+        <summary>View Creative Direction & ASMR Spec</summary>
+        <p style="margin-top:8px;">100mm f/2.8 macro studio production: faceted 24K golden elixir rising through water and white orchid petals on wet black obsidian stone, followed by slow-motion pipette drop release and tactile water/crystal ASMR sound design.</p>
+      </details>
+      <a class="cta-btn" href="01_Shiffa_Dubai_24K_Gold_Product_Commercial_ASMR.mp4" download>Book Appointment</a>
+    </article>
+
+    <article class="card">
+      <div class="video-frame">
+        <video controls playsinline preload="metadata" poster="Valeria_V2_Provocativa_Realista_Avatar.jpg" src="02_Shiffa_Dubai_Valeria_UGC_Ad_ASMR.mp4"></video>
+      </div>
+      <h2 class="card-title">2. High-Retention Creator Ad (@ValeriaReal)</h2>
+      <div class="price-tag">Complimentary Gift #2 (Included Free)</div>
+      <details>
+        <summary>View Creative Direction & ASMR Spec</summary>
+        <p style="margin-top:8px;">Dynamic speed-ramped Meta/TikTok ad featuring macro bottle hook, rack focus, exact droplet application on cheekbone and collarbone, and frame-synchronized binaural ASMR skin massage.</p>
+      </details>
+      <a class="cta-btn" href="02_Shiffa_Dubai_Valeria_UGC_Ad_ASMR.mp4" download>Book Appointment</a>
+    </article>
+
+    <article class="card">
+      <div class="video-frame">
+        <video controls playsinline preload="metadata" poster="Valeria_V2_Provocativa_Realista_Avatar.jpg" src="03_Shiffa_Dubai_Valeria_Organic_Reel_Clean_ASMR.mp4"></video>
+      </div>
+      <h2 class="card-title">3. Clean Organic Reel (No Overlays — 17s)</h2>
+      <div class="price-tag">Complimentary Bonus Cut</div>
+      <details>
+        <summary>View Creative Direction & ASMR Spec</summary>
+        <p style="margin-top:8px;">Uninterrupted 17-second organic creator reel with whisper-low ambient warmth and foreground tactile ASMR foley — ready for native Instagram Reels or custom captioning.</p>
+      </details>
+      <a class="cta-btn" href="03_Shiffa_Dubai_Valeria_Organic_Reel_Clean_ASMR.mp4" download>Book Appointment</a>
+    </article>
+  </section>
+
+  <section class="offer-box" id="offer">
+    <span class="badge">Scale Partner & Ad Pack Options</span>
+    <h2 style="font-family:'Fraunces',serif;font-size:1.75rem;margin-bottom:12px;">Ready to Scale Shiffa’s Video Ad Library?</h2>
+    <p style="color:var(--muted);max-width:640px;margin:0 auto 20px;">
+      <strong>Option A — 10-Video Monthly Ad Pack:</strong> <strong>1,000 AED</strong> flat activation for 10 custom 9:16 commercials (Studio Macro + UGC Creator Reels using your exact product bottles) + optional <strong>500 AED/year</strong> ongoing creative hosting & catalog updates.<br/><br/>
+      <strong>Option B — Zero-Risk Scale Partner:</strong> Performance-aligned ad production where we scale your winning SKUs on Meta/TikTok/Amazon for a small % of incremental revenue generated.
+    </p>
+    <a class="cta-btn" href="https://wa.me/971508379080">Book Appointment</a>
+  </section>
+
+  <footer>
+    Developed by Tecnoemprende • Luxury AI Commercial Production Studio — Dubai, UAE
+  </footer>
+
+  <script>
+    window.SPY_SITE_ID = "shiffa-dubai-video-ads";
+    window.SPY_SITE_NAME = "Shiffa Dubai — 24K Gold AI Video Ad Showcase";
+    window.SPY_SITE_CATEGORY = "dubai";
+  </script>
+  <script src="spy-tracker.js"></script>
+</body>
+</html>
